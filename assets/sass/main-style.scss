@@ -70,7 +70,7 @@ section {
         justify-content: center;
         gap: 15px;
         align-items: center;
-        width: 80%;
+        width: 100%;
         background-color: $white-color;
         box-shadow: 0px 0px 4px rgba(38, 6, 79, 0.1);
         transition: all 0.5s ease;
@@ -85,6 +85,7 @@ section {
 // Register - Login
 .register {
     background-color: $white-color;
+    padding: 20px 0;
     .wrapper {
         justify-content: center;
         align-items: center;
@@ -92,18 +93,16 @@ section {
     }
 
     .form-content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: start;
+        max-width: 423px;
+        width: 100%;
     }
 
     .heading-content {
         margin-bottom: 60px;
         h2 {
             color: $primary-color;
-            margin-bottom: 18px;
-            font-size: 3em;
+            margin-bottom: 10px;
+            font-size: 2.8em;
         }
 
         span {
@@ -134,20 +133,25 @@ section {
         align-items: flex-start;
     }
 
-    .span-form-content {
-        margin: 18px 0;
+    .form-item-wrap {
+        width: 100%;
+    }
+
+    .form-btn-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 58px;
     }
 
     .form-sign {
-        margin-bottom: 64px;
-
         i {
             margin-left: -30px;
             cursor: pointer;
         }
 
         label {
-            font-size: 1em;
+            font-size: 1.1em;
             font-weight: 400;
         }
 
@@ -161,11 +165,11 @@ section {
         .text-input {
             color: $text-color;
             font-size: 1.2em;
-            width: 423px;
+            width: 100%;
             height: 40px;
             border: none;
             border-bottom: 1px solid $primary-color;
-            padding-left: 4px;
+            padding-left: 8px;
             margin-bottom: 24px;
 
             &:focus {
@@ -180,7 +184,7 @@ section {
         }
     }
 
-    .form-wrap {
+    .form-check-wrap {
         margin-top: 10px;
         justify-content: space-between;
 

@@ -58,7 +58,7 @@ section {
   justify-content: center;
   gap: 15px;
   align-items: center;
-  width: 80%;
+  width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 0px 4px rgba(38, 6, 79, 0.1);
   transition: all 0.5s ease;
@@ -70,6 +70,7 @@ section {
 
 .register {
   background-color: #ffffff;
+  padding: 20px 0;
 }
 .register .wrapper {
   justify-content: center;
@@ -77,18 +78,16 @@ section {
   gap: 120px;
 }
 .register .form-content {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: start;
+  max-width: 423px;
+  width: 100%;
 }
 .register .heading-content {
   margin-bottom: 60px;
 }
 .register .heading-content h2 {
   color: #111f4d;
-  margin-bottom: 18px;
-  font-size: 3em;
+  margin-bottom: 10px;
+  font-size: 2.8em;
 }
 .register .heading-content span {
   color: #020205;
@@ -110,18 +109,21 @@ section {
   flex-direction: column;
   align-items: flex-start;
 }
-.register .span-form-content {
-  margin: 18px 0;
+.register .form-item-wrap {
+  width: 100%;
 }
-.register .form-sign {
-  margin-bottom: 64px;
+.register .form-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 58px;
 }
 .register .form-sign i {
   margin-left: -30px;
   cursor: pointer;
 }
 .register .form-sign label {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 400;
 }
 .register .form-sign .span-form {
@@ -133,11 +135,11 @@ section {
 .register .form-sign .text-input {
   color: #020205;
   font-size: 1.2em;
-  width: 423px;
+  width: 100%;
   height: 40px;
   border: none;
   border-bottom: 1px solid #111f4d;
-  padding-left: 4px;
+  padding-left: 8px;
   margin-bottom: 24px;
 }
 .register .form-sign .text-input:focus {
@@ -146,22 +148,22 @@ section {
 .register .form-sign .password-wrap .text-input {
   margin-bottom: unset;
 }
-.register .form-wrap {
+.register .form-check-wrap {
   margin-top: 10px;
   justify-content: space-between;
 }
-.register .form-wrap .form-check {
+.register .form-check-wrap .form-check {
   align-items: center;
   gap: 10px;
 }
-.register .form-wrap .form-check .form-check-label {
+.register .form-check-wrap .form-check .form-check-label {
   color: #020205;
 }
-.register .form-wrap .forget-password {
+.register .form-check-wrap .forget-password {
   text-decoration: none;
   color: #020205;
 }
-.register .form-wrap .forget-password:hover {
+.register .form-check-wrap .forget-password:hover {
   color: #0800f0;
 }
 .register .image-content {

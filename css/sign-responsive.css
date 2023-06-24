@@ -1,21 +1,22 @@
 @media (max-width: 1199.98px) {
-  .register {
-    padding: unset;
-  }
   .register .wrapper {
     gap: 30px;
-  }
-  .register .form-sign {
-    margin-bottom: 40px;
   }
   .register .heading-content {
     margin-bottom: 40px;
   }
   .register .heading-content h2 {
+    font-size: 2.4em;
     margin-bottom: unset;
   }
-  .register .span-form-content {
-    margin: 10px 0;
+  .register .heading-content span {
+    font-size: 1em;
+  }
+  .register .form-sign label {
+    font-size: 1em;
+  }
+  .register .form-sign .text-input {
+    font-size: 1.1em;
   }
 }
 @media (max-width: 991.98px) {
@@ -23,15 +24,15 @@
     height: 100vh;
     flex-direction: column;
   }
-  .register .text-content {
-    background: #ffffff;
+  .register .form-content {
+    max-width: 550px;
+    width: 100%;
+    background-color: #ffffff;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
     width: 100%;
     padding: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
   }
   .register .image-content {
     display: none;
@@ -45,11 +46,11 @@
 }
 @media (max-width: 575.98px) {
   .btn {
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding: 12px 28px;
   }
   .register .heading-content h2 {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
   .register .heading-content span {
     font-size: 1em;

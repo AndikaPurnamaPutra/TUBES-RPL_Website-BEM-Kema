@@ -2,25 +2,32 @@
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
     .register {
-        padding: unset;
+        // padding: unset;
         .wrapper {
             gap: 30px;
-        }
-
-        .form-sign {
-            margin-bottom: 40px;
         }
 
         .heading-content {
             margin-bottom: 40px;
 
             h2 {
+                font-size: 2.4em;
                 margin-bottom: unset;
+            }
+
+            span {
+                font-size: 1em;
             }
         }
 
-        .span-form-content {
-            margin: 10px 0;
+        .form-sign {
+            label {
+                font-size: 1em;
+            }
+
+            .text-input {
+                font-size: 1.1em;
+            }
         }
     }
 }
@@ -33,15 +40,15 @@
             flex-direction: column;
         }
 
-        .text-content {
-            background: #ffffff;
+        .form-content {
+            max-width: 550px;
+            width: 100%;
+            background-color: #ffffff;
             box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
             width: 100%;
             padding: 30px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            flex-direction: column;
         }
 
         .image-content {
@@ -63,13 +70,13 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .btn {
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 12px 28px;
     }
     .register {
         .heading-content {
             h2 {
-                font-size: 1.8em;
+                font-size: 1.7em;
             }
 
             span {
