@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
+
+// SASS Variable
+$primary-color: #26064f;
+$secondary-color: #9b6b5f;
+$text-color: #020205;
+$grey-color: #929292;
+$bg-color: #f2f2f2;
+$white-color: #ffffff;
+$yellow-color: #ffaf20;
+$font-heading: "Lato", sans-serif;
+$font-desc: "Montserrat", sans-serif;
+$fs-heading-1: 84px;
+$fs-heading-2: 54px;
+$fs-heading-3: 52px;
+$fs-heading-4: 48px;
+$fs-desc-1: 32px;
+$fs-desc-2: 24px;
+$fs-desc-3: 20px;
+$fs-desc-4: 16px;
+
+// $blue-color: #0800f0;
+// $blue-secodary-color: #0505bb;
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-desc;
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-color;
+    background-color: $white-color;
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.btn {
+    color: $primary-color;
+    font-size: 1em;
+    font-family: $font-desc;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    background-color: $white-color;
+    padding: 12px 32px;
+    cursor: pointer;
+
+    &--primary {
+        color: $white-color;
+        font-weight: 600;
+        background-color: $secondary-color;
+    }
+
+    &--secondary {
+        color: $secondary-color;
+        font-weight: 600;
+        border: 2px solid $secondary-color;
+    }
+
+    // &--form {
+    //     justify-content: center;
+    //     gap: 15px;
+    //     align-items: center;
+    //     width: 100%;
+    //     background-color: $white-color;
+    //     box-shadow: 0px 0px 4px rgba(38, 6, 79, 0.1);
+    //     transition: all 0.5s ease;
+
+    //     &:hover {
+    //         color: $blue-color;
+    //         box-shadow: 4px 8px 4px rgba(38, 6, 79, 0.1);
+    //     }
+    // }
+
+    &--icon {
+        padding: unset;
+        color: $text-color;
+        margin-right: 15px;
+
+        span {
+            font-size: 20px;
+        }
+
+        &-active {
+            color: $text-color;
+        }
+
+        &-disable {
+            color: $grey-color;
+            cursor: not-allowed;
+        }
+    }
+}
+
+// Navbar
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: $white-color;
+
+    &.b-bottom {
+        border-bottom: 14px solid #26064f;
+    }
+
+    .navbar-logo {
+        align-items: center;
+        gap: 15px;
+        font-size: 22px;
+        font-weight: 700;
+
+        img {
+            width: 54px;
+        }
+    }
+
+    .navbar-menu {
+        gap: 28px;
+        align-items: center;
+
+        .nav-link {
+            text-decoration: none;
+            color: $grey-color;
+            font-weight: 400;
+            padding: 4px 10px;
+
+            &:hover,
+            &.active {
+                color: $text-color;
+            }
+        }
+    }
+
+    .dropdown {
+        display: inline-block;
+        z-index: 1;
+        transition: all 0.5s ease;
+
+        .nav-link {
+            img {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        display: none;
+        background-color: $white-color;
+        width: 100%;
+        border-radius: 4px;
+        overflow: auto;
+
+        .dropdown-item {
+            display: block;
+            color: $primary-color;
+            padding: 10px;
+            transition: all 100ms ease;
+            text-decoration: none;
+
+            &:hover {
+                color: #ffffff;
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .btn-wrapper {
+        gap: 9px;
+    }
+}
+
+/* HOME PAGE */
+/* Section HERO */
+.hero {
+    .hero-image-wrap {
+        width: 100%;
+        height: 100vh;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .bg-hero-image {
+            width: 100%;
+            height: 100%;
+            background-color: $primary-color;
+            opacity: 85%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .hero-content-wrap {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 1052px;
+        width: 100%;
+    }
+
+    .hero-heading {
+        font-size: $fs-heading-1;
+        font-family: $font-heading;
+        color: $white-color;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 120%;
+    }
+}
+
+// Section Partner Logo
+.partner-logo {
+    padding: 56px 0;
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .partner-heading {
+        font-size: $fs-heading-2;
+        font-family: $font-heading;
+        font-weight: 700;
+        color: $text-color;
+    }
+
+    .logo-wrap {
+        gap: 100px;
+    }
+
+    .box-logo {
+        width: 220px;
+        height: 88px;
+        background-color: $bg-color;
+        border-radius: 8px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 10px 28px;
+        }
+    }
+}
+
+// Section Bem Kema Introduction
+.bem-kema-introduction {
+    background-color: $primary-color;
+    padding: 100px 0;
+    .wrapper {
+        align-items: center;
+        gap: 64px;
+    }
+
+    .content-text {
+        width: 100%;
+        .heading {
+            font-size: $fs-heading-2;
+            font-family: $font-heading;
+            font-weight: 700;
+            color: $white-color;
+            margin-bottom: 29px;
+        }
+
+        .desc {
+            font-size: $fs-desc-3;
+            color: $white-color;
+            text-align: justify;
+            line-height: 27px;
+        }
+    }
+
+    .content-image {
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+// Section Kabinet
+.kabinet {
+    padding: 100px 0;
+    .content-text {
+        .heading {
+            font-size: $fs-heading-2;
+            font-family: $font-heading;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    .content-box {
+        flex-direction: column;
+        gap: 24px;
+        .box {
+            display: flex;
+            flex-direction: column;
+            transition: all 300ms ease;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            gap: 32px;
+            padding: 62px;
+            background-color: $primary-color;
+            border-radius: 14px;
+
+            &:hover {
+                box-shadow: 10px 14px 8px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            &:hover .desc {
+                color: $white-color;
+            }
+        }
+
+        .heading {
+            font-size: $fs-heading-4;
+            text-transform: uppercase;
+            color: $yellow-color;
+        }
+
+        .desc {
+            font-size: $fs-desc-3;
+            color: rgba(255, 255, 255, 0.55);
+            font-weight: 400;
+            line-height: 38px;
+            text-align: justify;
+            transition: all 300ms ease;
+        }
+    }
+}
+
+// Section Presma-Wapresma
+.presma-wapresma {
+    padding-bottom: 100px;
+    .content-text {
+        margin-bottom: 70px;
+        max-width: 600px;
+        .heading {
+            font-size: $fs-heading-2;
+            font-family: $font-heading;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .content-box {
+        .card {
+            align-items: center;
+            gap: 100px;
+        }
+
+        .card-img {
+            max-width: 360px;
+        }
+
+        .card-body {
+            max-width: 540px;
+            flex-direction: column;
+            gap: 30px;
+            .heading {
+                font-size: $fs-heading-3;
+                font-weight: 700;
+                text-transform: capitalize;
+                font-family: $font-heading;
+            }
+            .lead {
+                font-size: $fs-desc-2;
+                font-weight: 400;
+            }
+
+            .desc {
+                font-size: $fs-desc-4;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+// Section Aspirasi
+.aspirasi {
+    padding: 100px 0;
+    .content-text {
+        margin-bottom: 40px;
+        max-width: 500px;
+        .heading {
+            font-size: $fs-heading-2;
+            font-family: $font-heading;
+        }
+    }
+
+    form {
+        .form-label {
+            font-size: 1.1em;
+            font-weight: 400;
+        }
+        .form-control {
+            color: $text-color;
+            font-size: 1.2em;
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-bottom: 1px solid $primary-color;
+            padding-left: 8px;
+            margin-bottom: 24px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .aspirasi-textarea {
+            flex-direction: column;
+
+            textarea {
+                margin: 24px 0;
+                font-size: $fs-desc-4;
+                font-family: $font-desc;
+                padding: 8px;
+                border: 1px solid $primary-color;
+            }
+        }
+
+        .btn-wrap {
+            justify-content: flex-end;
+        }
+    }
+}

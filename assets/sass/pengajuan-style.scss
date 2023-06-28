@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
+
+// SASS Variable
+$primary-color: #26064f;
+$secondary-color: #9b6b5f;
+$text-color: #020205;
+$bg-color: #f2f2f2;
+$white-color: #ffffff;
+$yellow-color: #ffaf20;
+$font-heading: "Lato", sans-serif;
+$font-desc: "Montserrat", sans-serif;
+$fs-heading-1: 84px;
+$fs-heading-2: 54px;
+$fs-heading-3: 52px;
+$fs-heading-4: 48px;
+$fs-desc-1: 32px;
+$fs-desc-2: 24px;
+$fs-desc-3: 20px;
+$fs-desc-4: 16px;
+
+.dashboard-info {
+    padding: 20px 0;
+    background-color: $primary-color;
+    .nav-link,
+    span {
+        color: $white-color;
+        font-size: $fs-desc-4;
+        text-decoration: none;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+}
+
+.btn--primary {
+    align-items: center !important;
+    gap: 8px;
+    font-weight: 400;
+}
+
+.bg-orange {
+    background-color: #e43a19;
+}
+
+.bg-green {
+    background-color: #009b4c;
+}
+
+.pusatPengajuan-wrap {
+    padding: 64px 0;
+    .content-heading {
+        justify-content: space-between;
+        align-items: center;
+
+        .heading {
+            font-size: 26px;
+        }
+    }
+
+    .btn-wrap {
+        gap: 30px;
+    }
+
+    .span-status {
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 4px 10px;
+        font-weight: 600;
+
+        &--success {
+            color: #064e3b;
+            background-color: #ecfdf5;
+        }
+
+        &--failed {
+            color: #991b1b;
+            background-color: #fef2f2;
+        }
+    }
+
+    .content-table {
+        margin-top: 64px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            td:nth-child(1) {
+                width: 5%;
+            }
+
+            td:nth-child(2) {
+                width: 20%;
+            }
+
+            td:nth-child(3) {
+                width: 40%;
+            }
+
+            td:nth-child(4) {
+                width: 15%;
+            }
+
+            td:nth-child(5) {
+                width: 20%;
+            }
+        }
+
+        th,
+        td {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: start;
+            text-transform: capitalize;
+            border-bottom: 1px solid #e7eaee;
+        }
+
+        th {
+            padding: 20px 0;
+            font-weight: 600;
+            color: #64748b;
+        }
+
+        td {
+            padding: 30px 0;
+            gap: 15px;
+        }
+    }
+}

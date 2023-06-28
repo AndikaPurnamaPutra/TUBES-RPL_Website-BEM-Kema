@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
+
+// SASS Variable
+$primary-color: #26064f;
+$secondary-color: #9b6b5f;
+$text-color: #020205;
+$bg-color: #f2f2f2;
+$white-color: #ffffff;
+$yellow-color: #ffaf20;
+$font-heading: "Lato", sans-serif;
+$font-desc: "Montserrat", sans-serif;
+$fs-heading-1: 84px;
+$fs-heading-2: 54px;
+$fs-heading-3: 52px;
+$fs-heading-4: 48px;
+$fs-desc-1: 32px;
+$fs-desc-2: 24px;
+$fs-desc-3: 20px;
+$fs-desc-4: 16px;
+
+.ukm-hero {
+    padding-top: 34px;
+    .img-ukm {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.heading {
+    font-size: $fs-heading-2;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    display: inline-block;
+
+    span {
+        font-weight: 400;
+    }
+}
+
+.sub-heading {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.desc {
+    font-size: $fs-desc-4;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.definisi,
+.visi,
+.misi {
+    margin: 42px 0;
+}

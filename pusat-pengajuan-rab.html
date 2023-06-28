@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
+        <link rel="stylesheet" href="css/main-style.css" />
+        <link rel="stylesheet" href="css/pengajuan-style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <title>Pusat Pengajuan</title>
+    </head>
+    <body>
+        <nav class="navbar d-flex container">
+            <a class="navbar-logo d-flex"><img src="assets/images/logo-bem.png" alt="logo bem" />BEM KEMA ITTP</a>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="navbar-collapse">
+                <div class="navbar-menu d-flex">
+                    <a href="home.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Kementrian</a>
+                    <div class="dropdown position-relative">
+                        <a href="#" class="nav-link dropdown-toggle"
+                            >Daftar UKM <img src="assets/images/icon-arrow.png" alt="icon arrow"
+                        /></a>
+                        <div class="dropdown-menu position-absolute">
+                            <a href="UKM_Wapala.html" class="dropdown-item">Wapala</a>
+                            <a href="#" class="dropdown-item">Karate</a>
+                            <a href="#" class="dropdown-item">Merpati Putih</a>
+                            <a href="#" class="dropdown-item">SKI</a>
+                            <a href="#" class="dropdown-item">Rokris</a>
+                            <a href="#" class="dropdown-item">Manggala</a>
+                            <a href="#" class="dropdown-item">Astralic</a>
+                            <a href="#" class="dropdown-item">IPTEK</a>
+                            <a href="#" class="dropdown-item">Seni</a>
+                            <a href="#" class="dropdown-item">KSR</a>
+                            <a href="#" class="dropdown-item">Voli</a>
+                            <a href="#" class="dropdown-item">Futsal</a>
+                            <a href="#" class="dropdown-item">Basket</a>
+                            <a href="#" class="dropdown-item">Bulutangkis</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="nav-link">Berita</a>
+                    <div class="dropdown position-relative">
+                        <a href="#" class="nav-link active"
+                            >Pusat Pengajuan <img src="assets/images/icon-arrow.png" alt="icon arrow"
+                        /></a>
+                        <div class="dropdown-menu position-absolute">
+                            <a href="#" class="dropdown-item">Laporan Kegiatan</a>
+                            <a href="#" class="dropdown-item">RAB</a>
+                            <a href="#" class="dropdown-item">LPJ</a>
+                            <a href="#" class="dropdown-item">Kegiatan UKM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrapper d-flex">
+                <button class="btn btn--primary">Login</button>
+                <button class="btn btn--secondary">Register</button>
+            </div>
+        </nav>
+
+        <section class="dashboard-info">
+            <div class="container">
+                <div class="wrapper">
+                    <a class="nav-link" href="#">Pusat Pengajuan</a>
+                    <span>>></span>
+                    <a class="nav-link" href="#">Rancangan Anggaran Biaya</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pusatPengajuan-wrap">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="content-heading d-flex">
+                        <h2 class="heading">Daftar Rancangan Anggaran Biaya UKM</h2>
+                        <div class="btn-wrap d-flex">
+                            <button class="btn btn--primary bg-orange d-flex">
+                                <span class="material-symbols-outlined"> download </span> Unduh Template
+                            </button>
+                            <button class="btn btn--primary bg-green d-flex">
+                                <span class="material-symbols-outlined"> upload </span> Upload Dokumen
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content-table">
+                        <table>
+                            <tr>
+                                <th>No</th>
+                                <th>Tanggal</th>
+                                <th>Judul</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2/19/21</td>
+                                <td>Jane Cooper</td>
+                                <td><span class="span-status span-status--success">Diterima</span></td>
+                                <td>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> edit_document </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> download </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> print </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> delete </span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>5/7/16</td>
+                                <td>Wade Warren</td>
+                                <td><span class="span-status span-status--success">Diterima</span></td>
+                                <td>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> edit_document </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> download </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> print </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> delete </span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>9/18/16</td>
+                                <td>Esther Howard</td>
+                                <td><span class="span-status span-status--failed">DITOLAK</span></td>
+                                <td>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> edit_document </span>
+                                    </button>
+                                    <button class="btn btn--icon btn--icon-disable">
+                                        <span class="material-symbols-outlined"> download </span>
+                                    </button>
+                                    <button class="btn btn--icon btn--icon-disable">
+                                        <span class="material-symbols-outlined"> print </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> delete </span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>2/11/12</td>
+                                <td>Cameron Williamson</td>
+                                <td><span class="span-status span-status--success">Diterima</span></td>
+                                <td>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> edit_document </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> download </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> print </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> delete </span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>9/18/16</td>
+                                <td>Brooklyn Simmons</td>
+                                <td><span class="span-status span-status--failed">DITOLAK</span></td>
+                                <td>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> edit_document </span>
+                                    </button>
+                                    <button class="btn btn--icon btn--icon-disable">
+                                        <span class="material-symbols-outlined"> download </span>
+                                    </button>
+                                    <button class="btn btn--icon btn--icon-disable">
+                                        <span class="material-symbols-outlined"> print </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> delete </span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>1/28/17</td>
+                                <td>Leslie Alexander</td>
+                                <td><span class="span-status span-status--failed">DITOLAK</span></td>
+                                <td>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> edit_document </span>
+                                    </button>
+                                    <button class="btn btn--icon btn--icon-disable">
+                                        <span class="material-symbols-outlined"> download </span>
+                                    </button>
+                                    <button class="btn btn--icon btn--icon-disable">
+                                        <span class="material-symbols-outlined"> print </span>
+                                    </button>
+                                    <button class="btn btn--icon">
+                                        <span class="material-symbols-outlined"> delete </span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script> -->
+    </body>
+</html>

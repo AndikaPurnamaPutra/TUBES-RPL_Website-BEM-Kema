@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
+.dashboard-info {
+  padding: 20px 0;
+  background-color: #26064f;
+}
+.dashboard-info .nav-link,
+.dashboard-info span {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.btn--primary {
+  align-items: center !important;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.bg-orange {
+  background-color: #e43a19;
+}
+
+.bg-green {
+  background-color: #009b4c;
+}
+
+.pusatPengajuan-wrap {
+  padding: 64px 0;
+}
+.pusatPengajuan-wrap .content-heading {
+  justify-content: space-between;
+  align-items: center;
+}
+.pusatPengajuan-wrap .content-heading .heading {
+  font-size: 26px;
+}
+.pusatPengajuan-wrap .btn-wrap {
+  gap: 30px;
+}
+.pusatPengajuan-wrap .span-status {
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-weight: 600;
+}
+.pusatPengajuan-wrap .span-status--success {
+  color: #064e3b;
+  background-color: #ecfdf5;
+}
+.pusatPengajuan-wrap .span-status--failed {
+  color: #991b1b;
+  background-color: #fef2f2;
+}
+.pusatPengajuan-wrap .content-table {
+  margin-top: 64px;
+}
+.pusatPengajuan-wrap .content-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pusatPengajuan-wrap .content-table table td:nth-child(1) {
+  width: 5%;
+}
+.pusatPengajuan-wrap .content-table table td:nth-child(2) {
+  width: 20%;
+}
+.pusatPengajuan-wrap .content-table table td:nth-child(3) {
+  width: 40%;
+}
+.pusatPengajuan-wrap .content-table table td:nth-child(4) {
+  width: 15%;
+}
+.pusatPengajuan-wrap .content-table table td:nth-child(5) {
+  width: 20%;
+}
+.pusatPengajuan-wrap .content-table th,
+.pusatPengajuan-wrap .content-table td {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: start;
+  text-transform: capitalize;
+  border-bottom: 1px solid #e7eaee;
+}
+.pusatPengajuan-wrap .content-table th {
+  padding: 20px 0;
+  font-weight: 600;
+  color: #64748b;
+}
+.pusatPengajuan-wrap .content-table td {
+  padding: 30px 0;
+  gap: 15px;
+}/*# sourceMappingURL=pengajuan-style.css.map */
