@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
 
 // SASS Variable
-$primary-color: #26064f;
-$secondary-color: #9b6b5f;
+$primary-color: #111f4d;
+$secondary-color: #ffaf20;
 $text-color: #020205;
 $bg-color: #f2f2f2;
 $white-color: #ffffff;
@@ -18,24 +18,14 @@ $fs-desc-2: 24px;
 $fs-desc-3: 20px;
 $fs-desc-4: 16px;
 
-.ukm-hero {
-    padding-top: 34px;
-    .img-ukm {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
-.heading {
-    font-size: $fs-heading-2;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    display: inline-block;
-
-    span {
+.hero {
+    .hero-heading {
         font-weight: 400;
+
+        span {
+            color: $yellow-color;
+            font-weight: 700;
+        }
     }
 }
 
@@ -49,10 +39,72 @@ $fs-desc-4: 16px;
     font-size: $fs-desc-4;
     font-weight: 400;
     text-align: justify;
+    text-indent: 3%;
+    line-height: 160%;
 }
 
-.definisi,
-.visi,
-.misi {
+.definisi {
     margin: 42px 0;
+}
+
+.visi-misi {
+    display: flex;
+    gap: 40px;
+
+    .sub-heading {
+        color: $yellow-color;
+        font-weight: 700;
+    }
+
+    .desc {
+        color: #c9c9c9;
+    }
+
+    .wrap {
+        width: 50%;
+        background-color: $primary-color;
+        padding: 34px;
+        border-radius: 14px;
+        transition: all 300ms ease;
+
+        &:hover {
+            box-shadow: 10px 14px 8px 0px rgba(0, 0, 0, 0.25);
+
+            .desc {
+                color: $white-color;
+            }
+        }
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    .card-body {
+        background-color: $white-color;
+        padding: 24px !important;
+        .card-title {
+            font-family: $font-desc;
+            font-size: $fs-desc-1;
+            text-transform: capitalize;
+            font-weight: 700;
+            margin-bottom: 8px;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        .card-text {
+            font-size: 18px;
+            font-family: $font-desc;
+            text-transform: capitalize;
+            color: #b1aaa5;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 25px 2px rgba(204, 204, 204, 1);
+    }
 }

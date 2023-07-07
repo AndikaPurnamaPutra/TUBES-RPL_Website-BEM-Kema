@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
 
 // SASS Variable
-$primary-color: #26064f;
-$secondary-color: #9b6b5f;
+$primary-color: #111f4d;
+$secondary-color: #ffaf20;
 $text-color: #020205;
 $bg-color: #f2f2f2;
 $white-color: #ffffff;
@@ -40,10 +40,20 @@ $fs-desc-4: 16px;
 
 .bg-orange {
     background-color: #e43a19;
+    transition: all 399ms ease;
+
+    &:hover {
+        background-color: #991b1b;
+    }
 }
 
 .bg-green {
     background-color: #009b4c;
+    transition: all 399ms ease;
+
+    &:hover {
+        background-color: #064e3b;
+    }
 }
 
 .pusatPengajuan-wrap {

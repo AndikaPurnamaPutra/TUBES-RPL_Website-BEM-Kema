@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
         <link rel="stylesheet" href="css/main-style.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
         <title>Home - BEM KEMA IT Telkom Purwokerto</title>
     </head>
@@ -12,9 +13,7 @@
         <nav class="navbar d-flex container">
             <a class="navbar-logo d-flex"><img src="assets/images/logo-bem.png" alt="logo bem" />BEM KEMA ITTP</a>
             <div class="navbar-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <img src="assets/images/menu.svg" alt="" />
             </div>
             <div class="navbar-collapse">
                 <div class="navbar-menu d-flex">
@@ -26,7 +25,7 @@
                         /></a>
                         <div class="dropdown-menu position-absolute">
                             <a href="UKM_Wapala.html" class="dropdown-item">Wapala</a>
-                            <a href="#" class="dropdown-item">Karate</a>
+                            <a href="UKM_Karate.html" class="dropdown-item">Karate</a>
                             <a href="#" class="dropdown-item">Merpati Putih</a>
                             <a href="#" class="dropdown-item">SKI</a>
                             <a href="#" class="dropdown-item">Rokris</a>
@@ -56,10 +55,10 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-wrapper d-flex">
+            <!-- <div class="btn-wrapper d-flex">
                 <button class="btn btn--primary">Login</button>
                 <button class="btn btn--secondary">Register</button>
-            </div>
+            </div> -->
         </nav>
         <section class="hero">
             <div class="container-fluid">
@@ -73,7 +72,9 @@
                         <div class="bg-hero-image position-absolute"></div>
                     </div>
                     <div class="hero-content-wrap position-absolute">
-                        <h1 class="hero-heading">Bem Kema IT Telkom Purwokerto</h1>
+                        <h1 class="hero-heading" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                            Bem Kema IT Telkom Purwokerto
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -82,8 +83,8 @@
         <section class="partner-logo">
             <div class="container">
                 <div class="wrapper d-flex">
-                    <h2 class="partner-heading">Partner Kami</h2>
-                    <div class="logo-wrap d-flex">
+                    <h2 class="partner-heading" data-aos="fade-up" data-aos-delay="300">Partner Kami</h2>
+                    <div class="logo-wrap d-flex" data-aos="fade-up" data-aos-delay="400">
                         <div class="box-logo">
                             <img src="assets/images/logo-ittp.png" alt="ITTP Logo" />
                         </div>
@@ -105,8 +106,8 @@
             <div class="container">
                 <div class="wrapper d-flex">
                     <div class="content-text">
-                        <h2 class="heading">BEM KEMA IT TELKOM PURWKERTO</h2>
-                        <p class="desc">
+                        <h2 class="heading" data-aos="fade-up" data-aos-delay="400">BEM KEMA IT TELKOM PURWKERTO</h2>
+                        <p class="desc" data-aos="fade-up" data-aos-delay="500">
                             BEM KEMA (Badan Eksekutif Mahasiswa Keluarga Mahasiswa) IT Telkom Purwokerto adalah lembaga
                             kemahasiswaan yang mewakili dan mengatur berbagai kegiatan serta kepentingan mahasiswa di
                             Institut Teknologi Telkom Purwokerto (ITTP). BEM KEMA merupakan badan eksekutif yang
@@ -114,7 +115,7 @@
                             mahasiswa di kampus.
                         </p>
                     </div>
-                    <div class="content-image">
+                    <div class="content-image" data-aos="fade-up-left" data-aos-delay="600">
                         <img src="assets/images/introduction.png" alt="" />
                     </div>
                 </div>
@@ -125,17 +126,17 @@
             <div class="container">
                 <div class="wrapper">
                     <div class="content-text">
-                        <h2 class="heading">Kabinet akarasa</h2>
+                        <h2 class="heading" data-aos="fade-up" data-aos-delay="400">Kabinet akarasa</h2>
                     </div>
                     <div class="content-box d-flex">
-                        <div class="box">
+                        <div class="box" data-aos="fade-up" data-aos-delay="500">
                             <h4 class="heading">Visi</h4>
                             <p class="desc">
                                 Menjadikan BEM KEMA IT Telkom Purwokerto sebagai katalisator pergerakan mahasiswa dalam
                                 proses berinovasi yang berbasis intelektual demi mencapai efisiensi dan keefektifan
                             </p>
                         </div>
-                        <div class="box">
+                        <div class="box" data-aos="fade-up" data-aos-delay="600">
                             <h4 class="heading">Misi</h4>
                             <ol>
                                 <li class="desc">
@@ -173,19 +174,29 @@
         <section class="presma-wapresma">
             <div class="container">
                 <div class="wrapper">
-                    <div class="content-text">
+                    <div class="content-text" data-aos="fade-up" data-aos-delay="300">
                         <h2 class="heading">Presma & wapresma periode 2023/2024</h2>
                     </div>
 
-                    <div class="content-box">
+                    <div class="content-box d-flex">
                         <div class="card d-flex">
-                            <img src="assets/images/img-card.png" alt="" class="card-img" />
+                            <img
+                                src="assets/images/img-card.png"
+                                alt=""
+                                class="card-img"
+                                data-aos="fade-up"
+                                data-aos-delay="400"
+                            />
                             <div class="card-body d-flex">
                                 <div class="card-title">
-                                    <h3 class="heading">Miranda Jacobson</h3>
-                                    <span class="lead">President Mahasiswa</span>
+                                    <h3 class="heading" data-aos="fade-up" data-aos-delay="500">
+                                        VERRY BOHAL IMMANUEL SIMATUPANG
+                                    </h3>
+                                    <span class="lead" data-aos="fade-up" data-aos-delay="600"
+                                        >President Mahasiswa</span
+                                    >
                                 </div>
-                                <div class="card-text">
+                                <div class="card-text" data-aos="fade-up" data-aos-delay="700">
                                     <p class="desc">
                                         After using this product, I found that my work efficiency has improved a lot. I
                                         am truly grateful to the developers.
@@ -194,13 +205,21 @@
                             </div>
                         </div>
                         <div class="card d-flex row-reverse">
-                            <img src="assets/images/img-card.png" alt="" class="card-img" />
+                            <img
+                                src="assets/images/img-card.png"
+                                alt=""
+                                class="card-img"
+                                data-aos="fade-up"
+                                data-aos-delay="800"
+                            />
                             <div class="card-body d-flex">
                                 <div class="card-title">
-                                    <h3 class="heading">Miranda Jacobson</h3>
-                                    <span class="lead">President Mahasiswa</span>
+                                    <h3 class="heading" data-aos="fade-up" data-aos-delay="900">BRIAN DANIEL PURBA</h3>
+                                    <span class="lead" data-aos="fade-up" data-aos-delay="1000"
+                                        >President Mahasiswa</span
+                                    >
                                 </div>
-                                <div class="card-text">
+                                <div class="card-text" data-aos="fade-up" data-aos-delay="1100">
                                     <p class="desc">
                                         After using this product, I found that my work efficiency has improved a lot. I
                                         am truly grateful to the developers.
@@ -216,10 +235,10 @@
         <section class="aspirasi">
             <div class="container">
                 <div class="wrapper">
-                    <div class="content-text">
+                    <div class="content-text" data-aos="fade-up" data-aos-delay="400">
                         <h2 class="heading">Ayo Sampaikan Aspirasimu!</h2>
                     </div>
-                    <div class="content-box">
+                    <div class="content-box" data-aos="fade-up" data-aos-delay="1200">
                         <form action="">
                             <div class="form-item-wrap">
                                 <label for="" class="form-label">Nama</label>
@@ -242,5 +261,87 @@
                 </div>
             </div>
         </section>
+
+        <section class="our-team">
+            <div class="container">
+                <div class="">
+                    <div class="content-text">
+                        <h2 class="heading" data-aos="fade-up" data-aos-delay="400">Our Team</h2>
+                    </div>
+                    <div class="content-box">
+                        <div class="card" data-aos="fade-up" data-aos-delay="600">
+                            <img src="assets/images/andika.jpg" alt="Andika" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">Andika <span>Purnama</span></h5>
+                                <p class="card-text">Front-End Web Developer</p>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="fade-up" data-aos-delay="800">
+                            <img src="assets/images/lintang.jpg" alt="" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">Lintang <span>Cahya</span></h5>
+                                <p class="card-text">Project Manager</p>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="fade-up" data-aos-delay="900">
+                            <img src="assets/images/bagas.jpg" alt="" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">bagas <span>arya </span></h5>
+                                <p class="card-text">Back-End Web Developer</p>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="fade-up" data-aos-delay="1000">
+                            <img src="assets/images/anggra.jpg" alt="" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">Latifah <span>Anggraeni</span></h5>
+                                <p class="card-text">UI Designer</p>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="fade-up" data-aos-delay="1100">
+                            <img src="assets/images/Nafidanisa.jpg" alt="" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">Nafidanisa</h5>
+                                <p class="card-text">UI Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="heading-content d-flex">
+                        <div class="nav-logo d-flex">
+                            <img src="assets/images/logo-bem.png" alt="logo bem" />
+                            <h5>Badan Eksekutif Mahasiswa IT Telkom Purwokerto</h5>
+                        </div>
+                        <div class="nav-menu d-flex">
+                            <a href="#" class="nav-link">Home</a>
+                            <a href="#" class="nav-link">Kementrian</a>
+                            <a href="#" class="nav-link">Daftar UKM</a>
+                            <a href="#" class="nav-link">Berita</a>
+                            <a href="#" class="nav-link">Pusat Pengajuan</a>
+                        </div>
+                    </div>
+                    <div class="end-content d-flex">
+                        <span class="copyright">© Copyright 2023 TUBES RPL KEL 07. All rights reserved.</span>
+                        <div class="social-media d-flex">
+                            <img src="assets/images/YouTube.png" alt="YouTube" />
+                            <img src="assets/images/Twitter.png" alt="Twitter" />
+                            <img src="assets/images/Instagram.png" alt="Instagram" />
+                            <img src="assets/images/WhatsApp.png" alt="WhatsApp" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
