@@ -54,6 +54,11 @@ section {
     background-color: $white-color;
     padding: 14px 32px;
 
+    a {
+        text-decoration: none;
+        color: unset;
+    }
+
     &--primary {
         color: $white-color;
         font-weight: 600;
