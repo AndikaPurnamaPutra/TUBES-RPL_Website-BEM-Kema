@@ -1347,11 +1347,11 @@ footer .end-content .copyright {
   color: #ffffff;
 }
 footer .end-content .social-media {
-  gap: 32px;
+  gap: 22px;
   cursor: pointer;
 }
 footer .end-content .social-media img {
-  max-width: 32px;
+  max-width: 24px;
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
