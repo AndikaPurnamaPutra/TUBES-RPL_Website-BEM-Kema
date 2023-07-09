@@ -445,8 +445,11 @@ section {
 
 @media (max-width: 576px) {
     .hero {
+        .hero-image-wrap {
+            max-height: 250px;
+        }
         .hero-heading {
-            font-size: 36px;
+            font-size: 32px;
         }
     }
 }
@@ -567,6 +570,12 @@ section {
                 padding: 10px 28px;
             }
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .partner-heading {
+        font-size: 32px !important;
     }
 }
 
