@@ -1,0 +1,44 @@
+.kementrian {
+    .content-text {
+        text-align: center;
+
+        .heading {
+            margin-bottom: 10px;
+        }
+        .desc {
+            font-size: 28px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content-text {
+            text-align: center;
+
+            .heading {
+                margin-bottom: 10px;
+                font-size: 36px;
+            }
+            .desc {
+                font-size: 22px;
+            }
+        }
+
+        // .content-box {
+        //     grid-template-columns: repeat(2, 1fr);
+        // }
+    }
+
+    @media (max-width: 576px) {
+        .content-text {
+            text-align: center;
+
+            .heading {
+                margin-bottom: 10px;
+                font-size: 26px;
+            }
+            .desc {
+                font-size: 16px;
+            }
+        }
+    }
+}

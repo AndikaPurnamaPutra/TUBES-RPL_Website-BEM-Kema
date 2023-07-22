@@ -1,0 +1,33 @@
+.kementrian .content-text {
+  text-align: center;
+}
+.kementrian .content-text .heading {
+  margin-bottom: 10px;
+}
+.kementrian .content-text .desc {
+  font-size: 28px;
+}
+@media (max-width: 768px) {
+  .kementrian .content-text {
+    text-align: center;
+  }
+  .kementrian .content-text .heading {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+  .kementrian .content-text .desc {
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .kementrian .content-text {
+    text-align: center;
+  }
+  .kementrian .content-text .heading {
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+  .kementrian .content-text .desc {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=kementrian-style.css.map */

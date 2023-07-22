@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
+        <link rel="stylesheet" href="/assets/css/main-style.css" />
+        <link rel="stylesheet" href="/assets/css/aspirasi-style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <title>Aspirasi</title>
+    </head>
+    <body>
+        <nav class="navbar d-flex container">
+            <a class="navbar-logo d-flex"><img src="/assets/images/logo-bem.png" alt="logo bem" />BEM KEMA ITTP</a>
+            <div class="navbar-toggle">
+                <img src="/assets/images/menu.svg" alt="nav-menu" />
+            </div>
+            <div class="navbar-collapse">
+                <div class="navbar-menu d-flex">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="kementrian.html" class="nav-link">Kementrian</a>
+                    <div class="dropdown position-relative">
+                        <a href="#" class="nav-link dropdown-toggle"
+                            >Daftar UKM <img src="/assets/images/icon-arrow.png" alt="icon arrow"
+                        /></a>
+                        <div class="dropdown-menu position-absolute">
+                            <a href="UKM_Wapala.html" class="dropdown-item">Wapala</a>
+                            <a href="UKM_Karate.html" class="dropdown-item">Karate</a>
+                            <a href="#" class="dropdown-item">Merpati Putih</a>
+                            <a href="#" class="dropdown-item">SKI</a>
+                            <a href="#" class="dropdown-item">Rokris</a>
+                            <a href="#" class="dropdown-item">Manggala</a>
+                            <a href="#" class="dropdown-item">Astralic</a>
+                            <a href="#" class="dropdown-item">IPTEK</a>
+                            <a href="#" class="dropdown-item">Seni</a>
+                            <a href="#" class="dropdown-item">KSR</a>
+                            <a href="#" class="dropdown-item">Voli</a>
+                            <a href="#" class="dropdown-item">Futsal</a>
+                            <a href="#" class="dropdown-item">Basket</a>
+                            <a href="#" class="dropdown-item">Bulutangkis</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="nav-link">Aspirasi</a>
+                    <div class="dropdown position-relative">
+                        <a href="#" class="nav-link active"
+                            >Pusat Pengajuan <img src="/assets/images/icon-arrow.png" alt="icon arrow"
+                        /></a>
+                        <div class="dropdown-menu position-absolute">
+                            <a href="#" class="dropdown-item">Laporan Kegiatan</a>
+                            <a href="pusat-pengajuan-rab.html" class="dropdown-item">RAB</a>
+                            <a href="pusat-pengajuan-lpj.html" class="dropdown-item">LPJ</a>
+                            <a href="#" class="dropdown-item">Kegiatan UKM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="btn-wrapper d-flex">
+                <button class="btn btn--primary">Login</button>
+                <button class="btn btn--secondary">Register</button>
+            </div> -->
+        </nav>
+        <!-- Aspirasi -->
+        <section class="aspirasi">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="content-text" data-aos="fade-up" data-aos-delay="400">
+                        <h2 class="heading">Ayo Sampaikan Aspirasimu!</h2>
+                    </div>
+                    <div class="content-box" data-aos="fade-up" data-aos-delay="1200">
+                        <form action="">
+                            <div class="form-item-wrap">
+                                <label for="" class="form-label">Nama</label>
+                                <input type="text" id="name" class="form-control" />
+                            </div>
+                            <div class="form-item-wrap">
+                                <label for="" class="form-label">NIM</label>
+                                <input type="number" id="nim" class="form-control" />
+                            </div>
+                            <div class="form-item-wrap aspirasi-textarea d-flex">
+                                <label for="" class="form-label">Aspirasimu</label>
+                                <textarea name="aspirasi" id="" cols="30" rows="10"></textarea>
+                                <!-- <input type="text" id="aspirasi" class="form-control" /> -->
+                            </div>
+                            <div class="btn-wrap d-flex">
+                                <button class="btn btn--primary">Sampaikan</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="/assets/js/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
