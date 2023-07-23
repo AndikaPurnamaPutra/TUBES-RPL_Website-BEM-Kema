@@ -10,6 +10,14 @@
         }
     }
 
+    .content-box {
+        .card {
+            .card-body {
+                text-transform: capitalize !important;
+            }
+        }
+    }
+
     @media (max-width: 768px) {
         .content-text {
             text-align: center;

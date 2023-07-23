@@ -7,6 +7,9 @@
 .kementrian .content-text .desc {
   font-size: 28px;
 }
+.kementrian .content-box .card .card-body {
+  text-transform: capitalize !important;
+}
 @media (max-width: 768px) {
   .kementrian .content-text {
     text-align: center;
